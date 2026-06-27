@@ -76,8 +76,8 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
 .pf img{width:100%;height:100%;object-fit:cover;display:block}
 
 /* card hover */
-.card-h{transition:transform .28s cubic-bezier(.4,0,.2,1),border-color .18s}
-.card-h:hover{transform:translateY(-4px)}
+.card-h{transition:transform .28s cubic-bezier(.4,0,.2,1),border-color .18s,box-shadow .18s;will-change:transform}
+.card-h:hover{transform:translateY(-4px);border-color:#FF6B2B;box-shadow:0 24px 60px rgba(255,107,43,.12)}
 
 /* skill tag */
 .stag{transition:border-color .18s}
@@ -240,62 +240,72 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
       <a href="projects.html" class="reveal d1 text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-accent transition-colors self-start sm:self-auto nl">All projects →</a>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-6">
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-5">
 
-      <article class="card-h reveal d1 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent md:row-span-2">
-        <div class="pf w-full h-64 md:h-80">
-          <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=900&q=80" alt="Novu SaaS Dashboard" loading="lazy">
+      <!-- Card 1 -->
+      <article class="card-h reveal d1 group rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-all p-6">
+        <div class="flex flex-wrap gap-1.5 mb-4">
+          <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-2 py-0.5 rounded-full">Laravel</span>
+          <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2 py-0.5 rounded-full">ERP</span>
         </div>
-        <div class="p-7">
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full">Laravel</span>
-            <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">Admin Panel</span>
-          </div>
-          <a href="case-study.html">
-            <h3 class="font-display font-bold text-2xl text-zinc-900 dark:text-white mb-2">  Admin Panel Development</h3>
-          </a>
-          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-5">  Developed secure and scalable admin panels with Laravel for managing users, products, categories, orders, and reports. Implemented authentication, CRUD operations, and responsive interfaces.</p>
-          <a href="case-study.html" class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 dark:text-white nl">View case study <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
-        </div>
+        <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">OneBusiness ERP (BVM Infotech)</h3>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">ERP-based web application built with Laravel, featuring multiple CRUD modules, integrated database operations, forms, validations, and a responsive admin panel.</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400">Skills: Laravel, PHP, MySQL, HTML, CSS, JavaScript.</p>
       </article>
 
-      <article class="card-h reveal d2 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
-        <div class="pf w-full h-48">
-          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Finlo Fintech App" loading="lazy">
+      <!-- Card 2 -->
+      <article class="card-h reveal d2 group rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-all p-6">
+        <div class="flex flex-wrap gap-1.5 mb-4">
+          <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-2 py-0.5 rounded-full">Core PHP</span>
+          <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2 py-0.5 rounded-full">E-Commerce</span>
         </div>
-        <div class="p-6">
-          <div class="flex flex-wrap gap-2 mb-3">
-              <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full">PHP</span>
-              <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">Html</span>
-              <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">Css</span>
-              <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">JavaScript</span>
-              <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">MySQL</span>
-          </div>
-          <a href="case-study.html">
-            <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-1.5">E-Commerce & AdSense Website</h3>
-          </a>
-          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4"> Built dynamic e-commerce and content-driven websites with secure admin panels, product management, authentication, and database-driven content using PHP and MySQL.</p>
-          <a href="case-study.html" class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 dark:text-white nl">View case study →</a>
-        </div>
+        <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">E-Commerce Website (BBMS PVT)</h3>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">Full-featured e-commerce platform with secure admin panel for managing products, categories, users, orders, cart, authentication, and dynamic MySQL data handling.</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400">Skills: Core PHP, MySQL, HTML, CSS, JavaScript.</p>
       </article>
 
-      <article class="card-h reveal d3 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
-        <div class="pf w-full h-48">
-          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80" alt="Orea Creative Agency" loading="lazy">
+      <!-- Card 3 -->
+      <article class="card-h reveal d3 group rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-all p-6">
+        <div class="flex flex-wrap gap-1.5 mb-4">
+          <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-2 py-0.5 rounded-full">Core PHP</span>
+          <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2 py-0.5 rounded-full">AdSense</span>
         </div>
-        <div class="p-6">
-          <div class="flex flex-wrap gap-2 mb-3">
-                         <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full">PHP</span>
-              <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">Html</span>
-              <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">Css</span>
-              <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">JavaScript</span>
-          </div>
-          <a href="case-study.html">
-            <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-1.5"> Landing Page Websites</h3>
-          </a>
-          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">  Converted Figma designs into fast, responsive, and SEO-friendly landing pages with modern UI, reusable components, and mobile-first layouts.</p>
-          <a href=case-study.html" class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 dark:text-white nl">View case study →</a>
+        <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Ad-Sense Website (BBMS PVT)</h3>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">Content-driven advertisement website built with Core PHP and a secure admin panel for managing ads, products, and dynamic content while generating revenue through Google Ads.</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400">Skills: Core PHP, HTML, CSS, JavaScript.</p>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card-h reveal d1 group rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-all p-6">
+        <div class="flex flex-wrap gap-1.5 mb-4">
+          <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-2 py-0.5 rounded-full">Core PHP</span>
+          <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2 py-0.5 rounded-full">Responsive</span>
         </div>
+        <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Madhav Solar (BBMS PVT)</h3>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">Converted a Figma design into a fully functional Core PHP website with responsive layouts and reusable components.</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400">Skills: Core PHP, HTML, CSS, JavaScript.</p>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card-h reveal d2 group rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-all p-6">
+        <div class="flex flex-wrap gap-1.5 mb-4">
+          <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-2 py-0.5 rounded-full">Booking</span>
+          <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2 py-0.5 rounded-full">Web App</span>
+        </div>
+        <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Varnika (BBMS PVT)</h3>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">Online beauty parlor appointment booking application with database-driven appointment management and user scheduling features.</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400">Skills: PHP, HTML, CSS, JavaScript, MySQL.</p>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="card-h reveal d3 group rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-all p-6">
+        <div class="flex flex-wrap gap-1.5 mb-4">
+          <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-2 py-0.5 rounded-full">UI</span>
+          <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2 py-0.5 rounded-full">Jewelry</span>
+        </div>
+        <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">DWARKESH &amp; CO. (BBMS PVT)</h3>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">Front-end jewelry website with a responsive luxury-focused interface designed to showcase products elegantly across devices.</p>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400">Skills: HTML, CSS, JavaScript.</p>
       </article>
 
     </div>
@@ -358,69 +368,48 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
   </div>
 </section>
 
-<!-- ═══ TESTIMONIALS ═══ -->
+<!-- ═══ WORK HISTORY ═══ -->
 <section id="reviews" class="py-24">
   <div class="max-w-6xl mx-auto px-6">
     <div class="mb-14">
-      <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Social proof</p>
-      <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white">What clients say</h2>
+      <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Work history</p>
+      <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white">Where I worked</h2>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-6">
+    <div class="grid gap-6 md:grid-cols-2">
 
-      <blockquote class="reveal d1 bg-zinc-50 dark:bg-zinc-900 rounded-2xl p-7 border border-zinc-100 dark:border-zinc-800">
-        <div class="flex gap-0.5 mb-5" aria-label="5 stars">
-          <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-        </div>
-        <p class="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed mb-6 italic">"Atul consistently delivered clean and maintainable Laravel code. His attention to detail and ability to quickly implement features made him a valuable part of our development team."</p>
-        <footer class="flex items-center gap-3">
-          <div class="pf w-10 h-10 rounded-full shrink-0"><img src="https://i.pravatar.cc/80?img=11" alt="Sarah Müller" loading="lazy"></div>
+      <article class="reveal d1 card-h group shadow-sm hover:shadow-xl bg-zinc-50 dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-all">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
           <div>
-            <p class="font-medium text-sm text-zinc-900 dark:text-white">Development Team</p>
-            <p class="text-xs text-zinc-500">BVM Infotech</p>
+            <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white transition-colors group-hover:text-accent dark:group-hover:text-accent">BVM Infotech</h3>
+            <p class="text-sm text-zinc-500 dark:text-zinc-400">Role: Laravel Developer</p>
           </div>
-        </footer>
-      </blockquote>
+          <p class="text-sm font-medium text-zinc-900 dark:text-white">March 2026 – May 2026</p>
+        </div>
+        <ul class="text-sm text-zinc-600 dark:text-zinc-300 space-y-3 list-disc list-inside leading-relaxed">
+          <li>Developed and maintained Laravel-based web applications.</li>
+          <li>Worked on Blade templates, routing, controllers, and database management.</li>
+          <li>Implemented CRUD functionality, authentication, and responsive UI integration.</li>
+          <li>Collaborated with team members to build scalable and maintainable modules.</li>
+        </ul>
+      </article>
 
-      <blockquote class="reveal d2 bg-zinc-900 dark:bg-zinc-800 rounded-2xl p-7 border border-zinc-800">
-        <div class="flex gap-0.5 mb-5" aria-label="5 stars">
-          <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-        </div>
-        <p class="text-zinc-400 text-sm leading-relaxed mb-6 italic">"Working with Atul was smooth and efficient. He handled Laravel modules, CRUD operations, and database management with professionalism and delivered tasks on time."</p>
-        <footer class="flex items-center gap-3">
-          <div class="pf w-10 h-10 rounded-full shrink-0"><img src=""></div>
+      <article class="reveal d2 card-h group shadow-sm hover:shadow-xl bg-zinc-50 dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-all">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
           <div>
-            <p class="font-medium text-sm text-white">Development Team</p>
-            <p class="text-xs text-zinc-500">Brightbrew Media & Solutions</p>
+            <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white transition-colors group-hover:text-accent dark:group-hover:text-accent">Brightbrew Media & Solutions Pvt.</h3>
+            <p class="text-sm text-zinc-500 dark:text-zinc-400">Role: Web Developer</p>
           </div>
-        </footer>
-      </blockquote>
-
-      <blockquote class="reveal d3 bg-zinc-50 dark:bg-zinc-900 rounded-2xl p-7 border border-zinc-100 dark:border-zinc-800">
-        <div class="flex gap-0.5 mb-5" aria-label="5 stars">
-          <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <p class="text-sm font-medium text-zinc-900 dark:text-white">Aug 2025 – Jan 2026</p>
         </div>
-        <p class="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed mb-6 italic">"Atul has strong problem-solving skills and writes efficient code. His experience with PHP, Laravel, MySQL, and REST APIs helped us build scalable and user-friendly applications."</p>
-        <footer class="flex items-center gap-3">
-          <div class="pf w-10 h-10 rounded-full shrink-0"><img src="https://i.pravatar.cc/80?img=47" alt="Camille Dufresne" loading="lazy"></div>
-          <div>
-            <p class="font-medium text-sm text-zinc-900 dark:text-white">Project Team</p>
-            <p class="text-xs text-zinc-500">Brightbrew Media & Solutions</p>
-          </div>
-        </footer>
-      </blockquote>
+        <ul class="text-sm text-zinc-600 dark:text-zinc-300 space-y-3 list-disc list-inside leading-relaxed">
+          <li>Developed dynamic web pages using Core PHP, MySQL, JavaScript, and CSS.</li>
+          <li>Implemented CRUD operations, form validations, and REST API integration.</li>
+          <li>Used jQuery and AJAX for asynchronous user interactions.</li>
+          <li>Worked with Laravel basics including routing, controllers, and Blade templates.</li>
+          <li>Optimized application performance and ensured responsive layouts.</li>
+        </ul>
+      </article>
 
     </div>
   </div>
@@ -449,10 +438,9 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
             <span class="text-xs text-zinc-400">Jun 2026</span>
           </div>
           <a href="blog-article.html">
-            <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors">Building Role-Based Modules with Laravel & Spatie</h3>
+            <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors">Building ERP Modules with Laravel</h3>
           </a>
-          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">Learn how to create scalable CRUD modules with Laravel and implement role-based access control using Spatie Permission. Manage users, roles, permissions, and secure resources with clean architecture and reusable components.</p>
-          <a href="blog-article.html" class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 dark:text-white nl">Read more →</a>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">Learn how to build scalable and reusable ERP modules with Laravel. Create models, migrations, controllers, and clean CRUD operations while implementing proper validation, database relationships, and a modular architecture. Develop maintainable business features by following Laravel best practices and writing clean, organized code.</p>
         </div>
       </article>
 
@@ -469,7 +457,6 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
             <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors">Building Secure REST APIs with Laravel</h3>
           </a>
           <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">Explore how to create secure and scalable REST APIs using Laravel, middleware, authentication, and API resources.</p>
-          <a href="blog-article.html" class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 dark:text-white nl">Read more →</a>
         </div>
       </article>
 
@@ -486,7 +473,6 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
             <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors">Optimizing MySQL Queries for Better Performance</h3>
           </a>
           <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">Discover practical techniques to optimize database queries, improve performance, and build scalable web applications.</p>
-          <a href="blog-article.html" class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 dark:text-white nl">Read more →</a>
         </div>
       </article>
 
@@ -537,7 +523,11 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
         </div>
 
         <div class="reveal d2">
-          <form action="#" method="POST" novalidate>
+          <form action="https://formsubmit.co/atulpatil3217@gmail.com" method="POST" novalidate>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New Portfolio Contact">
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
             <div class="flex flex-col gap-4">
               <div class="grid sm:grid-cols-2 gap-4">
                 <div>
@@ -577,7 +567,7 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
 
 <footer class="border-t border-zinc-100 dark:border-zinc-900">
   <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-    <p class="text-sm text-zinc-400">© <span id="yr"></span> Eliott. All rights reserved. <br> Developed by <a href="https://lbegey78.gumroad.com/" target="_blank" class="font-bold">Laurent Begey</a> • Distributed by <a href="https://themewagon.com/" target="_blank" class="font-bold">ThemeWagon</a></p>
+    <p class="text-sm text-zinc-400">© <span id="yr"></span> Atul Patil. All rights reserved. <br> Developed by Atul Patil.</p>
     <p class="text-xs text-zinc-500">Built with
       <a href="https://tailwindcss.com" rel="noopener noreferrer" target="_blank" class="hover:text-accent transition-colors">Tailwind CSS</a>
       &amp;
